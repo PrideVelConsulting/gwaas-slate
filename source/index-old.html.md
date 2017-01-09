@@ -1,13 +1,14 @@
 ---
-title: Cisco GWaaS iOS Documentation
+title: API Reference
 
 language_tabs:
-  - html
-  - request
-  - response
+  - shell
+  - ruby
+  - python
+  - javascript
 
 toc_footers:
-  - <a href='http://www.pridevel.com'>PrideVel Consulting LLC</a>
+  - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -16,110 +17,7 @@ includes:
 search: true
 ---
 
-# URL Endpoint
-
-ViewController: CG_URLEndpointViewController.
-
-```html
-https://still-lowlands-39275.herokuapp.com
-
-Method called on Next:
-- (IBAction)didTapNextButton:(id)sender
-```
-
-This view is used to set the endpoint URL to which the app will point to for making API requests to.
-
-# Login
-
-ViewController: CG_LoginViewController.
-
-```html
-Method called on Submit:
-- (void)initiateDataRequestWithMethodType:(NSString *)methodType 
-andMethodName:(NSString *)methodName 
-andParameters:(NSDictionary *)parameters 
-andFunctionName:(NSString *)functionName 
-andView:(UIView *)view 
-
-methodType: "POST"
-methodName: "sessions"
-parameters: @{@"email": _emailAddressTxtField.text, 
-@"password": _passwordTxtField.text}
-functionName: "Login"
-view: self.view
-
-- (void)initiateDataRequestWithMethodType:(NSString *)methodType 
-andMethodName:(NSString *)methodName 
-andParameters:(NSDictionary *)parameters 
-andFunctionName:(NSString *)functionName 
-andView:(UIView *)view
-
-methodType: "GET"
-methodName: "organizations"
-parameters: nil, 
-functionName: "List Organizations"
-view: view
-```
-
-This view is used by the user to enter his email and password to initiate the login process.
-
-<aside class="notice">
-On successful login, the apps hits the API to fetch list of organizations that
-he/she owns or is a member of.
-</aside>
-
-
-# Organizations
-
-ViewController: CG_OrganzationsListTableViewController.
-
-This view is used by the user to select an organization from the list of organizations that
-he/she owns or is a member of within a tableView
-
-# Account
-
-ViewController: CG_HomeViewController.
-
-```html
-- (void)setupDummyDataFetch
-# Creates dummy data for Assets, Job Tickets, Alerts and Customers since we are
-# not getting this data from APIs currently
-
-- (void)setupUserInterface
-# Creates the UI Elements for the view
-```
-
-This view displays the details of the Organization that the user selected to view.
-
-**Sections:**
-
-Assets Down (Also viewable by Elevators Tab).
-
-Job Tickets.
-
-Alerts.
-
-Customers.
-
-**Graphs of:**
-
-Tickets by Priority.
-
-Assets by Model
-
-
-
-# Job Tickets
-
-# Alerts
-
-# Customers
-
-# Elevators
-
-# Settings
-
-# Tutorials
+# Introduction
 
 Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
@@ -127,7 +25,7 @@ We have language bindings in Shell, Ruby, and Python! You can view code examples
 
 This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-# Login
+# Authentication
 
 > To authorize, use this code:
 
