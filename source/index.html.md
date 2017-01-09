@@ -3,15 +3,10 @@ title: Cisco GWaaS iOS Documentation
 
 language_tabs:
   - html
-  - request
-  - response
 
 toc_footers:
   - <a href='http://www.pridevel.com'>PrideVel Consulting LLC</a>
   - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
-
-includes:
-  - errors
 
 search: true
 ---
