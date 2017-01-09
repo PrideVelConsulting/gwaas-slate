@@ -59,7 +59,7 @@ view: view
 This view is used by the user to enter his email and password to initiate the login process.
 
 <aside class="notice">
-On successful login, the apps hits the API to fetch list of organizations that
+On successful login, the app hits the API to fetch list of organizations that
 he/she owns or is a member of.
 </aside>
 
